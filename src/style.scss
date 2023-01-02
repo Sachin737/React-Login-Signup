@@ -1,13 +1,12 @@
+// Styling for login and sign up pages
 .container {
-  background: url("./images/main-bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #837bda;
 
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 
   .wrapper {
     display: flex;
@@ -15,7 +14,8 @@
     align-items: center;
     justify-content: center;
 
-    background-color: #fff;
+    background-color: rgb(241, 241, 241);
+    opacity: 0.8;
     border-radius: 10px;
     gap: 20px;
 
@@ -33,16 +33,18 @@
     }
 
     form {
+      // border: 2px solid red;
       display: flex;
       flex-direction: column;
       gap: 20px;
 
       input {
+        background-color: rgb(241, 241, 241);
         width: 240px;
         padding: 15px 20px;
         border: none;
         outline: none;
-        border-bottom: 1px solid #2919ff;
+        border-bottom: 1px solid #756fc9;
 
         &::placeholder {
           font-size: 15px;
@@ -52,14 +54,7 @@
       }
 
       input:focus {
-        border-bottom: 2px solid #2919ff;
-      }
-
-      @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        input {
-          width: 100%;
-        }
+        border-bottom: 2px solid #756fc9;
       }
 
       button {
@@ -101,5 +96,12 @@
       color: #5d5bad;
       font-size: 14px;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .wrapper {
+    width: 60%;
   }
 }

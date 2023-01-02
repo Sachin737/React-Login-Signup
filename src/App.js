@@ -5,9 +5,11 @@ import AnimatedRoute from "./components/AnimatedRoute";
 
 function App() {
   return (
-    <Router>
-      <AnimatedRoute />
-    </Router>
+    <>
+      <Router>
+        <AnimatedRoute />
+      </Router>
+    </>
   );
 }
 
